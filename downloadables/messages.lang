@@ -1,0 +1,67 @@
+command.error.not_joined=§cYou didn't join a game!
+command.error.wrong_sender=§cSender has to be a player!
+command.error.reset.already=§cBoundary was already reset!
+command.error.map.not_available=§cCouldn't find the map!
+
+command.error.args.not_nums=§cArguments have to be numbers!
+command.error.args.boundsxz=§cX/Z coordinates have to be between -29999984 and 29999984!
+command.error.args.boundsy=§cY coordinates have to be between 1 and 255!
+
+command.error.bounds.bomba=§cBombsite A has to be reset first!
+command.error.bounds.bombb=§cBombsite B has to be reset first!
+command.error.bounds.bound=§cBoundary has to be reset first!
+command.error.bounds.tspawn=§cT-Spawn has to be reset first!
+command.error.bounds.ctspawn=§cCT-Spawn has to be reset first!
+
+command.error.finish.bounds=Not all areas were set! Missing boundaries: 
+command.error.finish.missingA=Bombsite A, 
+command.error.finish.missingB=Bombsite B, 
+command.error.finish.missingCT=CT-Spawn, 
+command.error.finish.missingT=T-Spawn, 
+command.error.finish.missingBounds=Boundaries, 
+command.error.finish.map_named=§cThere is already a map called %s!
+command.error.finish.outside=§cA boundary reached outside the main boundary! Adjust your bounds to make it fit the main bounds!
+
+command.success.bounds=§aBoundary created!
+command.success.delete=§aMap deleted!
+command.success.finish=§aMap successfully created!
+command.success.reset=§a%s has been reset!
+
+map.join.full=§cThe map you tried to join was full!
+map.join.already=§cYou already joined a game
+map.join.not_available=§cThe map you tried to join was not available
+
+map.game.item.bomb=§6Bomb
+map.game.item.bomb.lore1=High explosive block and able
+map.game.item.bomb.lore2=to destroy whole structures!
+map.game.item.bomb.lore3=Place it at a bombsite and we
+map.game.item.bomb.lore4=win in 40 seconds!
+
+map.game.player.defuse=§bI'm defuseing the bomb
+map.game.player.mate_killed_ct=§6%s killed %s
+map.game.player.mate_killed_t=§b%s killed %s
+
+map.game.illegal.movect=§bNot the correct time! We have to stop those terrorists!
+map.game.illegal.movet=§6We have to show them who's boss!
+
+map.game.money.killed.enemy=Killed enemy
+map.game.money.killed.mate=Mate killed
+map.game.money.win=Won round
+map.game.money.bomb_placed=§6Planted the bomb
+
+map.shop.money=§6MONEY
+map.shop.weapons=§7WEAPONS
+map.shop.arrows=§aARROWS
+map.shop.utility=§bUTILITY
+
+map.game.warmup=§9Warmup phase
+
+map.game.end.ctwin=§bCounter Terrorists win!
+map.game.end.twin=§6Terrorists win!
+map.game.end.draw=Draw!
+map.game.end.player_message=The game has ended! Result: 
+
+map.game.half=15 rounds have passed! Teams are now switched!
+
+map.game.bomb_placed.title=§cBomb has been planted!
+map.game.bomb_placed.sub=§c40 seconds until the explosion

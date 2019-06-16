@@ -48,6 +48,7 @@ map.game.illegal.movet=We have to show them who's boss!
 map.game.money.killed.enemy=Killed enemy
 map.game.money.killed.mate=Mate killed
 map.game.money.win=Won round
+map.game.money.lose=Lost round
 map.game.money.bomb_placed=Planted the bomb
 
 map.shop.money=MONEY

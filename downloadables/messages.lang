@@ -38,6 +38,7 @@ map.game.item.bomb.lore3=Place it at a bombsite and we
 map.game.item.bomb.lore4=win in 40 seconds!
 
 map.game.player.defuse=I'm defuseing the bomb
+map.game.player.planting=I'm plantig the bomb
 map.game.player.mate_killed_ct=%s killed %s
 map.game.player.mate_killed_t=%s killed %s
 

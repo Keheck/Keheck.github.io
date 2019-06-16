@@ -54,7 +54,6 @@ map.shop.money=MONEY
 map.shop.weapons=WEAPONS
 map.shop.arrows=ARROWS
 map.shop.utility=UTILITY
-
 map.game.warmup=Warmup phase
 
 map.game.end.ctwin=Counter Terrorists win!

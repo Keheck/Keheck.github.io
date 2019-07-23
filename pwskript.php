@@ -1,30 +1,37 @@
 <?php
-$passwort = '';
-if ( isset($_GET['q']) )
+$pw = "";
+if(isset($_GET['q']))
 {
-  $passwort = $_GET['q'];
+	$pw = $_GET['q'];
 }
-$sicherheitszahl = 0;
-$sicherheitszahl = strlen($passwort);
-if (preg_match("/[a-z]/", $passwort)) {
-    $sicherheitszahl = $sicherheitszahl + 5;
+$pwscore = strlen($pw);
+if(preg_match("/[a-z/", $pw))
+{
+	$pwscore += 5;
 }
-if (preg_match("/[A-Z]/", $passwort)) {
-    $sicherheitszahl = $sicherheitszahl + 5;
+if(preg_match("/[A-Z]/", $pw))
+{
+	$pwscore += 5;
 }
-if (preg_match("/[0-9]/", $passwort)) {
-    $sicherheitszahl = $sicherheitszahl + 5;
+if(preg_match("/[0-9]/", $pw))
+{
+	$pwscore += 5;
 }
-if (preg_match("/[,.-;:_]/", $passwort)) {
-    $sicherheitszahl = $sicherheitszahl + 5;
+if(preg_match("/[,.-;:_]/", $passwort))
+{
+	$pwscore += 5;
 }
-if ($sicherheitszahl <= 18 ) {
-    echo 'unsicher ('.$sicherheitszahl.' Punkte)';
+
+if($pwscore <= 18)
+{
+	echo 'unsicher ('.$pwscore.' Punkte)';
 }
-elseif ($sicherheitszahl <= 25) {
-    echo 'sicher ('.$sicherheitszahl.' Punkte)';
+elseif ($pwscore <= 25) 
+{
+    echo 'sicher ('.$pwscore.' Punkte)';
 }
-elseif ($sicherheitszahl > 25) {
-    echo 'sehr sicher ('.$sicherheitszahl.' Punkte)';
+elseif ($pwscore > 25) 
+{
+    echo 'sehr sicher ('.$pwscore.' Punkte)';
 }
 ?>

@@ -1,6 +1,35 @@
 <!DOCTYPE html>
 <html>
+	<head></head>
 	<body>
-		<p>This page is currently under construction!</p>
+		<input type="text" size="10" value="" onkeyup="testQuality(this.value)">
+		<span id="sicherheit">Hinweis hier</span>
+		<script>
+		function testQuality(value)
+		{
+			if(value=="")
+			{
+				document.getElementById("sicherheit").innerHTML="keine Eingabe";
+				return;
+			}
+			if(window.XMLHttpRequest)
+			{
+				xmlhttp = new XMLHttpRequest();
+			}
+			else
+			{
+				xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			xmlhttp.onreadystatechange = function()
+			{
+				if(xmlhttp.readyState==4 && xmlhttp.status == 200)
+				{
+					document.getElementById("sicherheit").innerHTML = xmlhttp.responseText;
+				}
+			}
+			xmlhttp.open("GET", "pwskript.php?q="+value, true);
+			xmlhttp.send();
+		}
+		</script>
 	</body>
 </html>

@@ -26,12 +26,4 @@ if($pwscore <= 18)
 {
 	echo 'unsicher';
 }
-elseif ($pwscore <= 25) 
-{
-    echo 'sicher';
-}
-elseif ($pwscore > 25) 
-{
-    echo 'sehr sicher';
-}
 ?>

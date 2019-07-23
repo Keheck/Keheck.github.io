@@ -24,14 +24,14 @@ if(preg_match("/[,.-;:_]/", $passwort))
 
 if($pwscore <= 18)
 {
-	echo 'unsicher ('.$pwscore.' Punkte)';
+	echo 'unsicher';
 }
 elseif ($pwscore <= 25) 
 {
-    echo 'sicher ('.$pwscore.' Punkte)';
+    echo 'sicher';
 }
 elseif ($pwscore > 25) 
 {
-    echo 'sehr sicher ('.$pwscore.' Punkte)';
+    echo 'sehr sicher';
 }
 ?>

@@ -2,39 +2,9 @@
 <html lang="de">
 	<head>
 		<meta charset="UTF-8">
-		<title>AJAX-Beispiel</title>
-		<script>
-		function testPwQuality(value)
-		{
-			if (value=="")
-			{
-				document.getElementById("securityNote").innerHTML="nothing there...";
-				return;
-			}
-			if (window.XMLHttpRequest)
-			{
-				xmlhttp=new XMLHttpRequest();
-			}
-			else
-			{
-				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-			}
-			xmlhttp.onreadystatechange=function()
-			{
-				if (xmlhttp.readyState==4 && xmlhttp.status==200)
-				{
-					document.getElementById("securityNote").innerHTML=xmlhttp.responseText;
-				}
-			}
-			xmlhttp.open("GET","pwtest.php?q="+value,true);
-			xmlhttp.send();
-		}
-		</script>
+		<title>Keheck</title>
 	</head>
 	<body>
-		<h1>AJAX test</h1>
-		<input type="text" size="10" value="" 
-		onkeyup="testPwQuality(this.value)" >
-		<span id="securityNote">AJAX</span>
+		<h1>Under Construction!</h1>
 	</body>
 </html>
